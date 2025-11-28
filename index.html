@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sujata Bharti - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <div class="overlay">
+      <h1 class="animate">Hi, I'm <span>Sujata Bharti</span></h1>
+      <p class="animate delay">B.Tech CSE Student | Web Developer | Creative Learner</p>
+    </div>
+  </header>
+
+  <section class="section animate-on-scroll">
+    <h2>🎓 Education</h2>
+    <p>GLA University, Mathura<br/>B.Tech in Computer Science and Engineering (2023–2027)</p>
+  </section>
+
+  <section class="section animate-on-scroll">
+    <h2>💻 Skills</h2>
+    <ul>
+      <li>C, Python, Java (OOPs)</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>DSA, DBMS, OS</li>
+    </ul>
+  </section>
+
+  <section class="section animate-on-scroll">
+    <h2>📁 Projects</h2>
+    <p>Mini Instagram Clone, Calculator in C, 3D Earth Animation, Personal Portfolio</p>
+  </section>
+
+  <section class="section animate-on-scroll">
+    <h2>📞 Contact </h2>
+    <p>Email: <a href="mail to:sujata.bharti_cs23@gla.ac.in" >sujata.bharti_cs23@gla.ac.in</a></p>
+  </section>
+
+  <footer>
+    <p class="made-by"> Made by Sujata Bharti 💖</p>
+   
+  </footer>
+
+ <!-- Audio -->
+<div class="music-container">
+  <button id="play-btn">🎵 Play Music</button>
+  <audio id="bg-music" src="music.mp3" loop></audio>
+</div>
+
+<script>
+  document.getElementById("play-btn").addEventListener("click", function() {
+    let music = document.getElementById("bg-music");
+    music.play();
+  });
+</script>
+
+ <script src="script.js">
+</script>
+<style>
+.music-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+#play-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+#play-btn:hover {
+  background-color: #ff1493;
+}
+</style>
+</body>
+</html>
